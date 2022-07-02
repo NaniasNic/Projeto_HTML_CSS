@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+/* Logo */
+.container{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.img-logo{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.img-logo h1{
+    font-size: 40px;
+    font-weight: lighter;
+    border: 3px solid white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Menu-Desktop */
+nav.menu-desktop{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+nav.menu-desktop ul{
+    list-style: none;
+}
+
+nav.menu-desktop ul li{
+    float: left;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+nav.menu-desktop ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu-desktop ul li a:hover{
+    color: black;
+}
+
+/* Informações da Página */
+section.back{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.back .titu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+section.back .blog{
+    width: 100%;
+}
+
+section.back .blog .img-info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section.back .blog .img-info img{
+    width: 250px;
+    height: 100%;
+}
+
+section.back .blog .text-info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.back .blog .text-info h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: red;
+    margin-top: 10px;
+}
+
+section.back .blog .text-info p{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: red;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}

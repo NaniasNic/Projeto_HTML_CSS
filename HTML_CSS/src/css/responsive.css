@@ -1,0 +1,103 @@
+/*Ocultando Menu Mobile*/
+nav.menu-mob{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+   /* Ocultando Menu Desktop */
+   nav.menu-desktop{
+    display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .img-logo{
+        width: 50%;
+    }
+
+    nav.menu-mob{
+        width: 50%;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav.menu-mob h2{
+        line-height: 10px;
+        margin-right: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav.menu-mob ul{
+        width: 0;
+        height: 100vh;
+        transition: 1s;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        padding: 50px 0;
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+    }
+
+    nav.menu-mob ul li{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    nav.menu-mob ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Informações */
+    section.back .titu{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    /* Informações */
+    section.back .titu{
+        font-size: 15px;
+    }
+
+    section.back .blog .img-info img{
+        width: 150px;
+        height: 100%;
+    }
+
+    section.back .blog .text-info h2{
+        font-size: 20px;
+    }
+    
+    section.back .blog .text-info p{
+        font-size: 16px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    /* Informações */
+    section.back .titu{
+        font-size: 10px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+}
